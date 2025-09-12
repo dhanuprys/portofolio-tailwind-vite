@@ -1,21 +1,33 @@
 <!doctype html>
 <html lang="en">
 
+<!-- HEAD SECTION: Contains meta information, external dependencies, and page configuration -->
+
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/src/style.css" />
   <title>DEDAN SYSTEM - Dhanu Purnayasa</title>
+  <!-- External CSS library for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <!-- jQuery library for JavaScript functionality -->
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
 </head>
 
+<!-- BODY SECTION: Main content container with dark gradient background -->
+
 <body class="bg-gradient-to-b from-slate-900 via-slate-950 to-slate-800 max-w-screen !overflow-x-hidden">
+
+  <!-- HEADER SECTION: Fixed navigation bar with logo and menu items -->
   <header
     class="fixed px-4 md:px-12 top-0 left-0 w-full max-w-full z-50 flex justify-between py-4 bg-slate-900/30 backdrop-blur-sm border-t-2 border-t-emerald-500/50">
+    <!-- Logo/Brand name -->
     <div>
       <span class="font-bold font-mono text-2xl text-white">{DEDAN <span class="text-emerald-400">SYS</span>TEM}</span>
     </div>
+    <!-- Navigation menu (hidden on mobile, visible on desktop) -->
     <ul class="gap-x-6 hidden md:inline-flex">
       <li>
         <a href="#profile" class="flex items-center gap-x-2 font-mono group hover:cursor-pointer">
@@ -37,7 +49,10 @@
       </li>
     </ul>
   </header>
+  <!-- MAIN CONTENT SECTION: Container for all page sections -->
   <main class="max-w-[75rem] mx-auto md:px-8">
+
+    <!-- LEFT SIDEBAR: Social media links (visible on large screens only) -->
     <div class="fixed flex-col justify-end items-center gap-y-8 top-0 left-0 h-full pl-12 hidden lg:flex">
       <ul class="space-y-8">
         <li>
@@ -58,32 +73,42 @@
           </a>
         </li>
       </ul>
+      <!-- Decorative line element -->
       <div class="h-1/4 w-[3px] bg-gray-500"></div>
     </div>
+
+    <!-- RIGHT SIDEBAR: Email contact (visible on large screens only) -->
     <div class="hidden fixed flex-col justify-end items-center gap-y-4 top-0 right-0 h-full pr-12 lg:flex">
       <a href="mailto:dhanuprys@gmail.com" target="_blank"
         class="text-gray-500 font-mono [writing-mode:vertical-rl] tracking-widest transition-transform duration-300 hover:-translate-y-2 hover:text-emerald-200">
         dhanuprys@gmail.com
       </a>
+      <!-- Decorative line element -->
       <div class="h-1/4 w-[3px] bg-gray-500"></div>
     </div>
 
+    <!-- CURSOR FOLLOWER: Interactive background element that follows mouse -->
     <div id="cursor-follower"
       class="!hidden md:!block bg-emerald-800/10 transition-opacity duration-500 rounded-full -translate-x-1/2 -translate-y-1/2 aspect-square h-[80%] fixed top-20 left-0 -z-20 blur-3xl">
     </div>
 
-    <!-- HERO -->
+    <!-- HERO SECTION: Introduction and main call-to-action -->
     <section class="min-h-screen flex flex-col justify-center px-6 md:px-14">
+      <!-- Greeting text -->
       <span class="font-mono text-emerald-400 text-lg md:text-xl">Hi, i'm...</span>
+      <!-- Main name heading -->
       <h1 class="text-4xl md:text-7xl font-bold text-gray-300 mt-2 md:mt-5">Dhanu Purnayasa.</h1>
+      <!-- Tagline with gradient text effect -->
       <p
         class="bg-gradient-to-b from-gray-400 to-gray-300 bg-clip-text text-transparent pb-4 opacity-80 text-3xl md:text-5xl font-bold mt-2 md:mt-5">
         I make software closer to everyone
       </p>
+      <!-- Personal description -->
       <p class="text-gray-500 md:text-xl mt-2 md:mt-5">
         I have loved writing code and building software since I was a <span
           class="text-emerald-400 font-semibold">kids!</span>.
       </p>
+      <!-- Call-to-action button -->
       <div class="mt-14">
         <a href="https://github.com/dhanuprys" target="_blank"
           class="px-6 py-4 rounded text-emerald-400 border font-bold transition-colors hover:cursor-pointer border-emerald-300 hover:bg-emerald-300 hover:text-slate-900">
@@ -91,20 +116,27 @@
           Check My Github
         </a>
       </div>
+      <!-- Background decorative element -->
       <div
         class="absolute -z-10 top-0 left-1/2 -translate-x-1/2 -translate-y-3/4 w-full aspect-square bg-gradient-to-b from-emerald-300/10 rounded-full">
       </div>
     </section>
 
-    <!-- PROFILE -->
+    <!-- PROFILE SECTION: About me information and personal photo -->
     <section class="min-h-screen flex flex-col justify-center px-6 md:px-14" id="profile">
+      <!-- Section header with number and title -->
       <div class="flex items-end gap-x-4">
         <span class="font-mono text-emerald-400 font-semibold text-lg md:text-2xl">01.</span>
         <h2 class="text-gray-300 text-2xl md:text-3xl font-bold">About Me</h2>
+        <!-- Decorative line -->
         <div class="h-px flex-auto bg-gray-500/20 mb-4 max-w-md"></div>
       </div>
+
+      <!-- Content container with text and image -->
       <div class="flex flex-col md:flex-row gap-y-4 gap-x-16 mt-5">
+        <!-- Text content area -->
         <div>
+          <!-- Personal introduction paragraph -->
           <p class="text-gray-500 text-lg">
             Hi, I'm Dhanu Purnayasa, a student at <span class="bg-emerald-500/30 rounded px-2 text-white">Ganesha
               University of
@@ -112,6 +144,7 @@
             IT. I'm especially drawn to software development and have hands-on experience in building impactful web
             applications designed to solve real-world problems.
           </p>
+          <!-- Current project description -->
           <p class="text-gray-500 text-lg mt-5">
             Right now, my main focus is on an exciting project: developing a <a href="https://sso.smkn3singaraja.sch.id"
               class="text-emerald-500 font-semibold hover:underline">Single Sign-On (SSO)</a> system
@@ -119,9 +152,11 @@
             3 Singaraja. This experience is giving me a fascinating, in-depth look at the unique business logic that
             drives a school's ecosystem.
           </p>
+          <!-- Technology skills introduction -->
           <p class="text-gray-500 text-lg mt-5">
             Here are a few technologies I've been working with recently:
           </p>
+          <!-- Technology skills grid -->
           <div class="grid grid-cols-2 gap-2 mt-5 md:pr-20">
             <div class="text-gray-400 text-lg flex items-center gap-x-3">
               <span class="w-[8px] h-[8px] bg-emerald-500/60 rounded-full"></span>
@@ -169,13 +204,18 @@
             </div>
           </div>
         </div>
+
+        <!-- Personal photo with hover effects -->
         <div class="group shrink-0 mt-4 flex justify-center">
           <div class="relative">
+            <!-- Main profile image -->
             <img src="/me.jpeg"
               class="bg-emerald-300 object-cover h-[300px] w-[300px] rounded -translate-x-[8px] -translate-y-[8px] transition-transform duration-500 group-hover:-translate-x-[12px] group-hover:-translate-y-[12px]">
+            <!-- Overlay effect on hover -->
             <div
               class="absolute rounded top-0 left-0 w-[300px] h-[300px] bg-emerald-800/40 -translate-x-[8px] -translate-y-[8px] transition-all border-2 border-emerald-300 duration-500 group-hover:bg-transparent group-hover:-translate-x-[12px] group-hover:-translate-y-[12px]">
             </div>
+            <!-- Background border element -->
             <div
               class="-z-10 absolute rounded top-0 left-0 w-[300px] h-[300px] border-2 border-emerald-300/30 translate-x-[8px] translate-y-[8px] transition-transform duration-500 group-hover:translate-x-[10px] group-hover:translate-y-[10px]">
             </div>
@@ -184,35 +224,46 @@
       </div>
     </section>
 
-    <!-- PROJECTS -->
+    <!-- PROJECTS SECTION: Portfolio showcase of developed applications -->
     <section class="min-h-screen flex flex-col px-4 mt-12" id="works">
+      <!-- Section header with number and title -->
       <div class="flex items-end gap-x-4">
         <span class="font-mono text-emerald-400 font-semibold text-lg md:text-2xl">02.</span>
         <h2 class="text-gray-300 text-2xl md:text-3xl font-bold">My Works</h2>
+        <!-- Decorative line -->
         <div class="h-px flex-auto bg-gray-500/20 mb-4 max-w-md"></div>
       </div>
+      <!-- Section introduction -->
       <p class="text-gray-500 text-lg mt-5 md:max-w-lg">
         Below are some of the projects I've developed. Beyond these, I am always passionate about experimenting with new
         technologies and programming languages.
       </p>
+      <!-- Projects container with spacing -->
       <div class="space-y-10 md:space-y-24 mt-16">
+
+        <!-- PROJECT 1: WEB STEMSI -->
         <div class="relative group flex flex-col md:flex-row bg-slate-950 md:bg-transparent rounded-lg">
+          <!-- Project image container -->
           <div
             class="relative aspect-auto w-full md:w-3/5 group-hover:w-full transition-all duration-500 delay-[300ms]">
             <img src="/images/webstemsi.png"
               class="object-contain bg-slate-700/20 rounded-lg md:border-2 md:border-emerald-800/30" />
+            <!-- Image overlay effect -->
             <div
               class="absolute bottom-0 rounded-lg left-0 w-full h-full bg-gradient-to-r from-black/70 to-black/30 group-hover:opacity-0 transition-opacity delay-75">
             </div>
           </div>
+          <!-- Project information panel -->
           <div
             class="md:absolute right-0 top-0 h-full p-6 md:p-8 md:max-w-1/2 flex flex-col justify-center border-1 shadow-2xl md:border-0 md:shadow-none md:items-end group-hover:bg-slate-950/95 rounded-r-lg transition-all delay-[300ms] duration-500">
             <span class="font-mono text-emerald-400">Featured Project</span>
             <strong class="text-2xl md:text-3xl mt-2 text-gray-300">WEB STEMSI</strong>
+            <!-- Project description -->
             <p
               class="md:text-right bg-slate-950/80 backdrop-blur-2xl shadow-lg text-gray-200 transition-all md:p-8 group-hover:p-0 group-hover:bg-transparent group-hover:backdrop-blur-none delay-[300ms] mt-4 md:mt-8 rounded-md">
               Halaman informasi untuk SMK Negeri 3 Singaraja. Web ini mencakup beberapa komponen seperti berita, galeri,
               informasi terkait sekolah, dll.
+              <!-- Technology tags -->
             <ul
               class="inline-flex flex-wrap gap-y-2 text-xs md:text-base gap-x-2 md:gap-x-6 mt-6 md:[&>li]:text-gray-400 [&>li]:text-xs md:[&>li]:text-sm [&>li]:font-mono">
               <li class="bg-emerald-600 rounded px-2 md:bg-transparent hover:text-white hover:cursor-default">#NextJS
@@ -228,25 +279,31 @@
           </div>
         </div>
 
+        <!-- PROJECT 2: SSO STEMSI -->
         <div class="relative group flex flex-col md:flex-row bg-slate-950 md:bg-transparent rounded-lg justify-end">
+          <!-- Project image container -->
           <div
             class="relative aspect-auto w-full md:w-3/5 group-hover:w-full transition-all duration-500 delay-[300ms]">
             <img src="/images/amerta-sso.png"
               class="object-contain bg-slate-700/20 rounded-lg md:border-2 md:border-emerald-800/30" />
+            <!-- Image overlay effect -->
             <div
               class="absolute bottom-0 rounded-lg left-0 w-full h-full bg-gradient-to-r from-black/70 to-black/30 group-hover:opacity-0 transition-opacity delay-75">
             </div>
           </div>
+          <!-- Project information panel (left-aligned) -->
           <div
             class="md:absolute left-0 top-0 h-full p-6 md:p-8 md:max-w-1/2 flex flex-col justify-center border-1 shadow-2xl md:border-0 md:shadow-none items-start group-hover:bg-slate-950/95 rounded-l-lg transition-all delay-[300ms] duration-500">
             <span class="font-mono text-emerald-400">Featured Project</span>
             <strong class="text-3xl mt-2 text-gray-300">SSO STEMSI</strong>
             <span class="font-mono text-white font-semibold text-sm">(+7 apps included)</span>
+            <!-- Project description -->
             <p
               class="bg-slate-950/80 backdrop-blur-2xl shadow-lg text-gray-200 transition-all md:p-8 group-hover:p-0 group-hover:bg-transparent group-hover:backdrop-blur-none delay-[300ms] mt-4 md:mt-8 rounded-md">
               SSO stemsi adalah sebuah sistem single sign-on di SMK Negeri 3 Singaraja yang digunakan untuk mengelola
               data warga sekolah. Aplikasi ini menjadi wadah untuk aplikasi-aplikasi turunan lainnya.
             </p>
+            <!-- Technology tags -->
             <ul
               class="inline-flex flex-wrap gap-y-2 text-xs md:text-base gap-x-2 md:gap-x-6 mt-6 md:[&>li]:text-gray-400 [&>li]:text-xs md:[&>li]:text-sm [&>li]:font-mono">
               <li class="bg-emerald-600 rounded px-2 md:bg-transparent hover:text-white hover:cursor-default">#Laravel
@@ -262,24 +319,30 @@
           </div>
         </div>
 
+        <!-- PROJECT 3: THE PAS GROUP (APS) -->
         <div class="relative group flex flex-col md:flex-row bg-slate-950 md:bg-transparent rounded-lg">
+          <!-- Project image container -->
           <div
             class="relative aspect-auto w-full md:w-3/5 group-hover:w-full transition-all duration-500 delay-[300ms]">
             <img src="/images/aps.png"
               class="object-contain bg-slate-700/20 rounded-lg md:border-2 md:border-emerald-800/30" />
+            <!-- Image overlay effect -->
             <div
               class="absolute bottom-0 rounded-lg left-0 w-full h-full bg-gradient-to-r from-black/70 to-black/30 group-hover:opacity-0 transition-opacity delay-75">
             </div>
           </div>
+          <!-- Project information panel -->
           <div
             class="md:absolute right-0 top-0 h-full p-6 md:p-8 md:max-w-1/2 flex flex-col justify-center border-1 shadow-2xl md:border-0 md:shadow-none md:items-end group-hover:bg-slate-950/95 rounded-r-lg transition-all delay-[300ms] duration-500">
             <span class="font-mono text-emerald-400">Featured Project</span>
             <strong class="text-3xl mt-2 text-gray-300">The Pas Group (APS)</strong>
+            <!-- Project description -->
             <p
               class="md:text-right bg-slate-950/80 backdrop-blur-2xl shadow-lg text-gray-200 transition-all md:p-8 group-hover:p-0 group-hover:bg-transparent group-hover:backdrop-blur-none delay-[300ms] mt-4 md:mt-8 rounded-md">
               Sebuah web company profile dari The Pas Group (APS). Web ini mencakup beberapa komponen seperti tentang
               perusahaan, produk, layanan, dll.
             </p>
+            <!-- Technology tags -->
             <ul
               class="inline-flex flex-wrap gap-y-2 text-xs md:text-base gap-x-2 md:gap-x-6 mt-6 md:[&>li]:text-gray-400 [&>li]:text-xs md:[&>li]:text-sm [&>li]:font-mono">
               <li class="bg-emerald-600 rounded px-2 md:bg-transparent hover:text-white hover:cursor-default">#ReactJS
@@ -291,23 +354,29 @@
           </div>
         </div>
 
+        <!-- PROJECT 4: NITHEATER -->
         <div class="relative group flex flex-col md:flex-row bg-slate-950 md:bg-transparent rounded-lg justify-end">
+          <!-- Project image container -->
           <div
             class="relative aspect-auto w-full md:w-3/5 group-hover:w-full transition-all duration-500 delay-[300ms]">
             <img src="/images/nitheater.png"
               class="object-contain bg-slate-700/20 rounded-lg md:border-2 md:border-emerald-800/30" />
+            <!-- Image overlay effect -->
             <div
               class="absolute bottom-0 rounded-lg left-0 w-full h-full bg-gradient-to-r from-black/70 to-black/30 group-hover:opacity-0 transition-opacity delay-75">
             </div>
           </div>
+          <!-- Project information panel (left-aligned) -->
           <div
             class="md:absolute left-0 top-0 h-full p-6 md:p-8 md:max-w-1/2 flex flex-col justify-center border-1 shadow-2xl md:border-0 md:shadow-none items-start group-hover:bg-slate-950/95 rounded-l-lg transition-all delay-[300ms] duration-500">
             <span class="font-mono text-emerald-400">Featured Project</span>
             <strong class="text-3xl mt-2 text-gray-300">NITHEATER</strong>
+            <!-- Project description -->
             <p
               class="bg-slate-950/80 backdrop-blur-2xl shadow-lg text-gray-200 transition-all md:p-8 group-hover:p-0 group-hover:bg-transparent group-hover:backdrop-blur-none delay-[300ms] mt-4 md:mt-8 rounded-md">
               NITHEATER adalah sebuah halaman bagian dari film fest nitisara.
             </p>
+            <!-- Technology tags -->
             <ul
               class="inline-flex flex-wrap gap-y-2 text-xs md:text-base gap-x-2 md:gap-x-6 mt-6 md:[&>li]:text-gray-400 [&>li]:text-xs md:[&>li]:text-sm [&>li]:font-mono">
               <li class="bg-emerald-600 rounded px-2 md:bg-transparent hover:text-white hover:cursor-default">#Laravel
@@ -323,23 +392,29 @@
           </div>
         </div>
 
+        <!-- PROJECT 5: GITA AI -->
         <div class="relative group flex flex-col md:flex-row bg-slate-950 md:bg-transparent rounded-lg">
+          <!-- Project image container -->
           <div
             class="relative aspect-auto w-full md:w-3/5 group-hover:w-full transition-all duration-500 delay-[300ms]">
             <img src="/images/gita-ai.png"
               class="object-contain bg-slate-700/20 rounded-lg md:border-2 md:border-emerald-800/30" />
+            <!-- Image overlay effect -->
             <div
               class="absolute bottom-0 rounded-lg left-0 w-full h-full bg-gradient-to-r from-black/70 to-black/30 group-hover:opacity-0 transition-opacity delay-75">
             </div>
           </div>
+          <!-- Project information panel -->
           <div
             class="md:absolute right-0 top-0 h-full p-6 md:p-8 md:max-w-1/2 flex flex-col justify-center border-1 shadow-2xl md:border-0 md:shadow-none md:items-end group-hover:bg-slate-950/95 rounded-r-lg transition-all delay-[300ms] duration-500">
             <span class="font-mono text-emerald-400">Featured Project</span>
             <strong class="text-3xl mt-2 text-gray-300">Gita AI</strong>
+            <!-- Project description -->
             <p
               class="md:text-right bg-slate-950/80 backdrop-blur-2xl shadow-lg text-gray-200 transition-all md:p-8 group-hover:p-0 group-hover:bg-transparent group-hover:backdrop-blur-none delay-[300ms] mt-4 md:mt-8 rounded-md">
               Gita AI adalah sebuah webapp yang menyajikan informasi bhagavadgita dengan dibantu AI.
             </p>
+            <!-- Technology tags -->
             <ul
               class="inline-flex flex-wrap gap-y-2 text-xs md:text-base gap-x-2 md:gap-x-6 mt-6 md:[&>li]:text-gray-400 [&>li]:text-xs md:[&>li]:text-sm [&>li]:font-mono">
               <li class="bg-emerald-600 rounded px-2 md:bg-transparent hover:text-white hover:cursor-default">#ReactJS
@@ -354,24 +429,30 @@
           </div>
         </div>
 
+        <!-- PROJECT 6: SKP AWARDS -->
         <div class="relative group flex flex-col md:flex-row bg-slate-950 md:bg-transparent rounded-lg justify-end">
+          <!-- Project image container -->
           <div
             class="relative aspect-auto w-full md:w-3/5 group-hover:w-full transition-all duration-500 delay-[300ms]">
             <img src="/images/skp-awards.png"
               class="object-contain bg-slate-700/20 rounded-lg md:border-2 md:border-emerald-800/30" />
+            <!-- Image overlay effect -->
             <div
               class="absolute bottom-0 rounded-lg left-0 w-full h-full bg-gradient-to-r from-black/70 to-black/30 group-hover:opacity-0 transition-opacity delay-75">
             </div>
           </div>
+          <!-- Project information panel (left-aligned) -->
           <div
-            class="md:absolute left-0 top-0 h-full p-6 md:p-8 md:max-w-1/2 flex flex-col justify-center border-1 shadow-2xl md:border-0 shadow-none items-start group-hover:bg-slate-950/95 rounded-l-lg transition-all delay-[300ms] duration-500">
+            class="md:absolute left-0 top-0 h-full p-6 md:p-8 md:max-w-1/2 flex flex-col justify-center border-1 md:border-0 md:shadow-none items-start group-hover:bg-slate-950/95 rounded-l-lg transition-all delay-[300ms] duration-500">
             <span class="font-mono text-emerald-400">Featured Project</span>
             <strong class="text-3xl mt-2 text-gray-300">SKP Awards</strong>
+            <!-- Project description -->
             <p
               class="bg-slate-950/80 backdrop-blur-2xl shadow-lg text-gray-200 transition-all md:p-8 group-hover:p-0 group-hover:bg-transparent group-hover:backdrop-blur-none delay-[300ms] mt-4 md:mt-8 rounded-md">
               SKP Awards adalah sebuah fitur pada aplikasi BEM FTK SKP yang digunakan untuk menghasilkan
               ranking keaktifan mahasiswa.
             </p>
+            <!-- Technology tags -->
             <ul
               class="inline-flex flex-wrap gap-y-2 text-xs md:text-base gap-x-2 md:gap-x-6 mt-6 md:[&>li]:text-gray-400 [&>li]:text-xs md:[&>li]:text-sm [&>li]:font-mono">
               <li class="bg-emerald-600 rounded px-2 md:bg-transparent hover:text-white hover:cursor-default">#Laravel
@@ -387,21 +468,25 @@
           </div>
         </div>
 
+        <!-- Portfolio website mention -->
         <div class="text-center text-gray-500 text-sm">
           and of course, <span class="text-emerald-400 font-semibold"> THIS WEB</span> too...
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- CONTACT SECTION: Contact information and social media links -->
     <section
       class="min-h-screen max-h-screen overflow-hidden flex flex-col items-center justify-center space-y-4 relative"
       id="contact">
+      <!-- Section header -->
       <span class="font-mono text-emerald-400 font-semibold text-xl">03. Get more</span>
       <h2 class="text-gray-300 text-5xl font-bold">Contact</h2>
+      <!-- Contact description -->
       <p class="text-gray-500 text-lg text-center max-w-lg">
         Feel free to reach out to me via email or LinkedIn.
       </p>
+      <!-- Social media links container -->
       <div class="mt-8">
         <ul class="flex items-center gap-x-4 md:gap-x-10">
           <li>
@@ -430,11 +515,14 @@
           </li>
         </ul>
       </div>
+      <!-- Background decorative element -->
       <div
         class="absolute -z-50 bottom-0 left-0 w-full border-t-2 aspect-square translate-y-3/4 bg-gradient-to-t rounded-full to-black/10 from-emerald-300/10">
       </div>
     </section>
   </main>
+
+  <!-- JavaScript module for interactive functionality -->
   <script type="module" src="/src/main.js"></script>
 </body>
 
