@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/src/style.css" />
+  <title>DEDAN SYSTEM - Dhanu Purnayasa</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body class="bg-gradient-to-b from-slate-900 via-slate-950 to-slate-800 max-w-screen !overflow-x-hidden">
+  <header
+    class="fixed px-4 md:px-12 top-0 left-0 w-full max-w-full z-50 flex justify-between py-4 bg-slate-900/30 backdrop-blur-sm border-t-2 border-t-emerald-500/50">
+    <div>
+      <span class="font-bold font-mono text-2xl text-white">{DEDAN <span class="text-emerald-400">SYS</span>TEM}</span>
+    </div>
+    <ul class="gap-x-6 hidden md:inline-flex">
+      <li>
+        <a href="#profile" class="flex items-center gap-x-2 font-mono group hover:cursor-pointer">
+          <span class="text-emerald-400 font-semibold text-sm">01.</span>
+          <h2 class="text-gray-300 font-bold group-hover:text-emerald-400 transition-colors">Profile</h2>
+        </a>
+      </li>
+      <li>
+        <a href="#works" class="flex items-center gap-x-2 font-mono group hover:cursor-pointer">
+          <span class="text-emerald-400 font-semibold text-sm">02.</span>
+          <h2 class="text-gray-300 font-bold group-hover:text-emerald-400 transition-colors">Works</h2>
+        </a>
+      </li>
+      <li>
+        <a href="#contact" class="flex items-center gap-x-2 font-mono group hover:cursor-pointer">
+          <span class="text-emerald-400 font-semibold text-sm">03.</span>
+          <h2 class="text-gray-300 font-bold group-hover:text-emerald-400 transition-colors">Contact</h2>
+        </a>
+      </li>
+    </ul>
+  </header>
+  <main class="max-w-[75rem] mx-auto md:px-8">
+    <div class="fixed flex-col justify-end items-center gap-y-8 top-0 left-0 h-full pl-12 hidden lg:flex">
+      <ul class="space-y-8">
+        <li>
+          <a href=" https://github.com/dhanuprys" target="_blank">
+            <i
+              class="fa-brands fa-github text-2xl text-gray-500 transition-transform duration-300 hover:text-emerald-200 hover:translate-x-1"></i>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/dhanuprys/" target="_blank">
+            <i
+              class="fa-brands fa-linkedin text-2xl text-gray-500 transition-transform duration-300 hover:text-emerald-200 hover:translate-x-1"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/dhanuprys/" target="_blank">
+            <i
+              class="fa-brands fa-instagram text-2xl text-gray-500 transition-transform duration-300 hover:text-emerald-200 hover:translate-x-1"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="h-1/4 w-[3px] bg-gray-500"></div>
+    </div>
+    <div class="hidden fixed flex-col justify-end items-center gap-y-4 top-0 right-0 h-full pr-12 lg:flex">
+      <a href="mailto:dhanuprys@gmail.com" target="_blank"
+        class="text-gray-500 font-mono [writing-mode:vertical-rl] tracking-widest transition-transform duration-300 hover:-translate-y-2 hover:text-emerald-200">
+        dhanuprys@gmail.com
+      </a>
+      <div class="h-1/4 w-[3px] bg-gray-500"></div>
+    </div>
+
+    <div id="cursor-follower"
+      class="!hidden md:!block bg-emerald-800/10 transition-opacity duration-500 rounded-full -translate-x-1/2 -translate-y-1/2 aspect-square h-[80%] fixed top-20 left-0 -z-20 blur-3xl">
+    </div>
+
+    <!-- HERO -->
+    <section class="min-h-screen flex flex-col justify-center px-6 md:px-14">
+      <span class="font-mono text-emerald-400 text-lg md:text-xl">Hi, i'm</span>
+      <h1 class="text-4xl md:text-7xl font-bold text-gray-300 mt-2 md:mt-5">Dhanu Purnayasa.</h1>
+      <p
+        class="bg-gradient-to-b from-gray-400 to-gray-300 bg-clip-text text-transparent pb-4 opacity-80 text-3xl md:text-5xl font-bold mt-2 md:mt-5">
+        I make software closer to everyone
+      </p>
+      <p class="text-gray-500 md:text-xl mt-2 md:mt-5">
+        I have loved writing code and building software since I was a <span
+          class="text-emerald-400 font-semibold">kids!</span>.
+      </p>
+      <div class="mt-14">
+        <a href="https://github.com/dhanuprys" target="_blank"
+          class="px-6 py-4 rounded text-emerald-400 border font-bold transition-colors hover:cursor-pointer border-emerald-300 hover:bg-emerald-300 hover:text-slate-900">
+          <i class="fa-brands fa-github text-xl mr-2"></i>
+          Check My Github
+        </a>
+      </div>
+      <div
+        class="absolute -z-10 top-0 left-1/2 -translate-x-1/2 -translate-y-3/4 w-full aspect-square bg-gradient-to-b from-emerald-300/10 rounded-full">
+      </div>
+    </section>
+
+    <!-- PROFILE -->
+    <section class="min-h-screen flex flex-col justify-center px-6 md:px-14" id="profile">
+      <div class="flex items-end gap-x-4">
+        <span class="font-mono text-emerald-400 font-semibold text-lg md:text-2xl">01.</span>
+        <h2 class="text-gray-300 text-2xl md:text-3xl font-bold">About Me</h2>
+        <div class="h-px flex-auto bg-gray-500/20 mb-4 max-w-md"></div>
+      </div>
+      <div class="flex flex-col md:flex-row gap-y-4 gap-x-16 mt-5">
+        <div>
+          <p class="text-gray-500 text-lg">
+            Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in web
+            development started back in 2012 when I decided to try editing custom Tumblr themes — turns out
+            hacking
+            together a custom reblog button taught me a lot about HTML & CSS!
+          </p>
+          <p class="text-gray-500 text-lg mt-5">
+            Fast-forward to today, and I’ve had the privilege of working at an advertising agency, a start-up, a
+            huge
+            corporation, and a student-led design studio. My main focus these days is building accessible,
+            inclusive
+            products and digital experiences at Upstatement for a variety of clients.
+          </p>
+          <p class="text-gray-500 text-lg mt-5">
+            Here are a few technologies I’ve been working with recently:
+          </p>
+          <div class="grid grid-cols-2 gap-2 mt-5 md:pr-20">
+            <div class="text-gray-400 text-lg flex items-center gap-x-3">
+              <span class="w-[8px] h-[8px] bg-emerald-500/60 rounded-full"></span>
+              <span class="md:px-2 md:py-1 md:bg-gray-500/10 rounded font-semibold text-sm">CSS</span>
+            </div>
+            <div class="text-gray-400 text-lg flex items-center gap-x-3">
+              <span class="w-[8px] h-[8px] bg-emerald-500/60 rounded-full"></span>
+              <span class="md:px-2 md:py-1 md:bg-gray-500/10 rounded font-semibold text-sm">Tailwind</span>
+            </div>
+            <div class="text-gray-400 text-lg flex items-center gap-x-3">
+              <span class="w-[8px] h-[8px] bg-emerald-500/60 rounded-full"></span>
+              <span class="md:px-2 md:py-1 md:bg-gray-500/10 rounded font-semibold text-sm">Javascript</span>
+            </div>
+            <div class="text-gray-400 text-lg flex items-center gap-x-3">
+              <span class="w-[8px] h-[8px] bg-emerald-500/60 rounded-full"></span>
+              <span class="md:px-2 md:py-1 md:bg-gray-500/10 rounded font-semibold text-sm">Typescript</span>
+            </div>
+            <div class="text-gray-400 text-lg flex items-center gap-x-3">
+              <span class="w-[8px] h-[8px] bg-emerald-500/60 rounded-full"></span>
+              <span class="md:px-2 md:py-1 md:bg-gray-500/10 rounded font-semibold text-sm">Python</span>
+            </div>
+            <div class="text-gray-400 text-lg flex items-center gap-x-3">
+              <span class="w-[8px] h-[8px] bg-emerald-500/60 rounded-full"></span>
+              <span class="md:px-2 md:py-1 md:bg-gray-500/10 rounded font-semibold text-sm">React / NextJS</span>
+            </div>
+            <div class="text-gray-400 text-lg flex items-center gap-x-3">
+              <span class="w-[8px] h-[8px] bg-emerald-500/60 rounded-full"></span>
+              <span class="md:px-2 md:py-1 md:bg-gray-500/10 rounded font-semibold text-sm">Expo</span>
+            </div>
+            <div class="text-gray-400 text-lg flex items-center gap-x-3">
+              <span class="w-[8px] h-[8px] bg-emerald-500/60 rounded-full"></span>
+              <span class="md:px-2 md:py-1 md:bg-gray-500/10 rounded font-semibold text-sm">Laravel + Inertia</span>
+            </div>
+            <div class="text-gray-400 text-lg flex items-center gap-x-3">
+              <span class="w-[8px] h-[8px] bg-emerald-500/60 rounded-full"></span>
+              <span class="md:px-2 md:py-1 md:bg-gray-500/10 rounded font-semibold text-sm">MySQL, Postgres</span>
+            </div>
+            <div class="text-gray-400 text-lg flex items-center gap-x-3">
+              <span class="w-[8px] h-[8px] bg-emerald-500/60 rounded-full"></span>
+              <span class="md:px-2 md:py-1 md:bg-gray-500/10 rounded font-semibold text-sm">Linux</span>
+            </div>
+            <div class="text-gray-400 text-lg flex items-center gap-x-3">
+              <span class="w-[8px] h-[8px] bg-emerald-500/60 rounded-full"></span>
+              <span class="md:px-2 md:py-1 md:bg-gray-500/10 rounded font-semibold text-sm">Docker</span>
+            </div>
+          </div>
+        </div>
+        <div class="group shrink-0 mt-4 flex justify-center">
+          <div class="relative">
+            <img src="/public/me.jpeg"
+              class="bg-emerald-300 object-cover h-[300px] w-[300px] rounded -translate-x-[8px] -translate-y-[8px] transition-transform duration-500 group-hover:-translate-x-[12px] group-hover:-translate-y-[12px]">
+            <div
+              class="absolute rounded top-0 left-0 w-[300px] h-[300px] bg-emerald-800/40 -translate-x-[8px] -translate-y-[8px] transition-all border-2 border-emerald-300 duration-500 group-hover:bg-transparent group-hover:-translate-x-[12px] group-hover:-translate-y-[12px]">
+            </div>
+            <div
+              class="-z-10 absolute rounded top-0 left-0 w-[300px] h-[300px] border-2 border-emerald-300/30 translate-x-[8px] translate-y-[8px] transition-transform duration-500 group-hover:translate-x-[10px] group-hover:translate-y-[10px]">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="min-h-screen flex flex-col px-4 mt-12" id="works">
+      <div class="flex items-end gap-x-4">
+        <span class="font-mono text-emerald-400 font-semibold text-lg md:text-2xl">02.</span>
+        <h2 class="text-gray-300 text-2xl md:text-3xl font-bold">My Works</h2>
+        <div class="h-px flex-auto bg-gray-500/20 mb-4 max-w-md"></div>
+      </div>
+      <p class="text-gray-500 text-base md:text-lg mt-5">
+        Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in web
+        development started back in 2012 when I decided to try editing custom Tumblr themes — turns out
+        hacking
+        together a custom reblog button taught me a lot about HTML & CSS!
+      </p>
+      <div class="space-y-10 md:space-y-24 mt-16">
+        <div class="relative group flex flex-col md:flex-row bg-slate-950 md:bg-transparent rounded-lg">
+          <div
+            class="relative aspect-auto w-full md:w-3/5 group-hover:w-full transition-all duration-500 delay-[300ms]">
+            <img src="/images/webstemsi.png"
+              class="object-contain bg-slate-700/20 rounded-lg md:border-2 md:border-emerald-800/30" />
+            <div
+              class="absolute bottom-0 rounded-lg left-0 w-full h-full bg-gradient-to-r from-black/70 to-black/30 group-hover:opacity-0 transition-opacity delay-75">
+            </div>
+          </div>
+          <div
+            class="md:absolute right-0 top-0 h-full p-4 md:p-8 md:max-w-1/2 flex flex-col justify-center md:items-end group-hover:bg-slate-950/95 rounded-r-lg transition-all delay-[300ms] duration-500">
+            <span class="font-mono text-emerald-400">Featured Project</span>
+            <strong class="text-2xl md:text-3xl mt-2 text-gray-300">SSO STEMSI</strong>
+            <p
+              class="md:text-right bg-slate-950/80 backdrop-blur-2xl shadow-lg text-gray-200 transition-all md:p-8 group-hover:p-0 group-hover:bg-transparent group-hover:backdrop-blur-none delay-[300ms] mt-8 rounded-md">
+              SSO STEMSI is a single sign-on system for the STEMSI. It is a web application that allows users to
+              login to the system using their email and password.
+            </p>
+            <ul
+              class="inline-flex text-xs md:text-base gap-x-4 md:gap-x-6 mt-6 [&>li]:text-gray-400 [&>li]:text-sm [&>li]:font-mono">
+              <li class="hover:text-white hover:cursor-default">#NextJS</li>
+              <li class="hover:text-white hover:cursor-default">#fastify</li>
+              <li class="hover:text-white hover:cursor-default">#Postgres</li>
+              <li class="hover:text-white hover:cursor-default">#Typescript</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="relative group flex flex-col md:flex-row bg-slate-950 md:bg-transparent rounded-lg justify-end">
+          <div
+            class="relative aspect-auto w-full md:w-3/5 group-hover:w-full transition-all duration-500 delay-[300ms]">
+            <img src="/images/amerta-sso.png"
+              class="object-contain bg-slate-700/20 rounded-lg md:border-2 md:border-emerald-800/30" />
+            <div
+              class="absolute bottom-0 rounded-lg left-0 w-full h-full bg-gradient-to-r from-black/70 to-black/30 group-hover:opacity-0 transition-opacity delay-75">
+            </div>
+          </div>
+          <div
+            class="md:absolute left-0 top-0 h-full p-4 md:p-8 md:max-w-1/2 flex flex-col justify-center items-start group-hover:bg-slate-950/95 rounded-l-lg transition-all delay-[300ms] duration-500">
+            <span class="font-mono text-emerald-400">Featured Project</span>
+            <strong class="text-3xl mt-2 text-gray-300">SSO STEMSI</strong>
+            <span class="font-mono text-white font-semibold text-sm">(+7 apps included)</span>
+            <p
+              class="bg-slate-950/80 backdrop-blur-2xl shadow-lg text-gray-200 transition-all md:p-8 group-hover:p-0 group-hover:bg-transparent group-hover:backdrop-blur-none delay-[300ms] mt-8 rounded-md">
+              SSO STEMSI is a single sign-on system for the STEMSI. It is a web application that allows users to
+              login to the system using their email and password.
+            </p>
+            <ul
+              class="inline-flex text-xs md:text-base gap-x-4 md:gap-x-6 mt-6 [&>li]:text-gray-400 [&>li]:text-sm [&>li]:font-mono">
+              <li class="hover:text-white hover:cursor-default">#Laravel</li>
+              <li class="hover:text-white hover:cursor-default">#Postgres</li>
+              <li class="hover:text-white hover:cursor-default">#ReactJS</li>
+              <li class="hover:text-white hover:cursor-default">#Typescript</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="relative group flex flex-col md:flex-row bg-slate-950 md:bg-transparent rounded-lg">
+          <div
+            class="relative aspect-auto w-full md:w-3/5 group-hover:w-full transition-all duration-500 delay-[300ms]">
+            <img src="/images/aps.png"
+              class="object-contain bg-slate-700/20 rounded-lg md:border-2 md:border-emerald-800/30" />
+            <div
+              class="absolute bottom-0 rounded-lg left-0 w-full h-full bg-gradient-to-r from-black/70 to-black/30 group-hover:opacity-0 transition-opacity delay-75">
+            </div>
+          </div>
+          <div
+            class="md:absolute right-0 top-0 h-full p-4 md:p-8 md:max-w-1/2 flex flex-col justify-center md:items-end group-hover:bg-slate-950/95 rounded-r-lg transition-all delay-[300ms] duration-500">
+            <span class="font-mono text-emerald-400">Featured Project</span>
+            <strong class="text-3xl mt-2 text-gray-300">SSO STEMSI</strong>
+            <p
+              class="md:text-right bg-slate-950/80 backdrop-blur-2xl shadow-lg text-gray-200 transition-all md:p-8 group-hover:p-0 group-hover:bg-transparent group-hover:backdrop-blur-none delay-[300ms] mt-8 rounded-md">
+              SSO STEMSI is a single sign-on system for the STEMSI. It is a web application that allows users to
+              login to the system using their email and password.
+            </p>
+            <ul
+              class="inline-flex text-xs md:text-base gap-x-4 md:gap-x-6 mt-6 [&>li]:text-gray-400 [&>li]:text-sm [&>li]:font-mono">
+              <li class="hover:text-white hover:cursor-default">#ReactJS</li>
+              <li class="hover:text-white hover:cursor-default">#TailwindCSS</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="relative group flex flex-col md:flex-row bg-slate-950 md:bg-transparent rounded-lg justify-end">
+          <div
+            class="relative aspect-auto w-full md:w-3/5 group-hover:w-full transition-all duration-500 delay-[300ms]">
+            <img src="/images/nitheater.png"
+              class="object-contain bg-slate-700/20 rounded-lg md:border-2 md:border-emerald-800/30" />
+            <div
+              class="absolute bottom-0 rounded-lg left-0 w-full h-full bg-gradient-to-r from-black/70 to-black/30 group-hover:opacity-0 transition-opacity delay-75">
+            </div>
+          </div>
+          <div
+            class="md:absolute left-0 top-0 h-full p-4 md:p-8 md:max-w-1/2 flex flex-col justify-center items-start group-hover:bg-slate-950/95 rounded-l-lg transition-all delay-[300ms] duration-500">
+            <span class="font-mono text-emerald-400">Featured Project</span>
+            <strong class="text-3xl mt-2 text-gray-300">SSO STEMSI</strong>
+            <p
+              class="bg-slate-950/80 backdrop-blur-2xl shadow-lg text-gray-200 transition-all md:p-8 group-hover:p-0 group-hover:bg-transparent group-hover:backdrop-blur-none delay-[300ms] mt-8 rounded-md">
+              SSO STEMSI is a single sign-on system for the STEMSI. It is a web application that allows users to
+              login to the system using their email and password.
+            </p>
+            <ul
+              class="inline-flex text-xs md:text-base gap-x-4 md:gap-x-6 mt-6 [&>li]:text-gray-400 [&>li]:text-sm [&>li]:font-mono">
+              <li class="hover:text-white hover:cursor-default">#Laravel</li>
+              <li class="hover:text-white hover:cursor-default">#Postgres</li>
+              <li class="hover:text-white hover:cursor-default">#ReactJS</li>
+              <li class="hover:text-white hover:cursor-default">#Typescript</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="relative group flex flex-col md:flex-row bg-slate-950 md:bg-transparent rounded-lg">
+          <div
+            class="relative aspect-auto w-full md:w-3/5 group-hover:w-full transition-all duration-500 delay-[300ms]">
+            <img src="/images/gita-ai.png"
+              class="object-contain bg-slate-700/20 rounded-lg md:border-2 md:border-emerald-800/30" />
+            <div
+              class="absolute bottom-0 rounded-lg left-0 w-full h-full bg-gradient-to-r from-black/70 to-black/30 group-hover:opacity-0 transition-opacity delay-75">
+            </div>
+          </div>
+          <div
+            class="md:absolute right-0 top-0 h-full p-4 md:p-8 md:max-w-1/2 flex flex-col justify-center md:items-end group-hover:bg-slate-950/95 rounded-r-lg transition-all delay-[300ms] duration-500">
+            <span class="font-mono text-emerald-400">Featured Project</span>
+            <strong class="text-3xl mt-2 text-gray-300">SSO STEMSI</strong>
+            <p
+              class="md:text-right bg-slate-950/80 backdrop-blur-2xl shadow-lg text-gray-200 transition-all md:p-8 group-hover:p-0 group-hover:bg-transparent group-hover:backdrop-blur-none delay-[300ms] mt-8 rounded-md">
+              SSO STEMSI is a single sign-on system for the STEMSI. It is a web application that allows users to
+              login to the system using their email and password.
+            </p>
+            <ul
+              class="inline-flex text-xs md:text-base gap-x-4 md:gap-x-6 mt-6 [&>li]:text-gray-400 [&>li]:text-sm [&>li]:font-mono">
+              <li class="hover:text-white hover:cursor-default">#ReactJS</li>
+              <li class="hover:text-white hover:cursor-default">#TailwindCSS</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="relative group flex flex-col md:flex-row bg-slate-950 md:bg-transparent rounded-lg justify-end">
+          <div
+            class="relative aspect-auto w-full md:w-3/5 group-hover:w-full transition-all duration-500 delay-[300ms]">
+            <img src="/images/skp-awards.png"
+              class="object-contain bg-slate-700/20 rounded-lg md:border-2 md:border-emerald-800/30" />
+            <div
+              class="absolute bottom-0 rounded-lg left-0 w-full h-full bg-gradient-to-r from-black/70 to-black/30 group-hover:opacity-0 transition-opacity delay-75">
+            </div>
+          </div>
+          <div
+            class="md:absolute left-0 top-0 h-full p-4 md:p-8 md:max-w-1/2 flex flex-col justify-center items-start group-hover:bg-slate-950/95 rounded-l-lg transition-all delay-[300ms] duration-500">
+            <span class="font-mono text-emerald-400">Featured Project</span>
+            <strong class="text-3xl mt-2 text-gray-300">SSO STEMSI</strong>
+            <p
+              class="bg-slate-950/80 backdrop-blur-2xl shadow-lg text-gray-200 transition-all md:p-8 group-hover:p-0 group-hover:bg-transparent group-hover:backdrop-blur-none delay-[300ms] mt-8 rounded-md">
+              SSO STEMSI is a single sign-on system for the STEMSI. It is a web application that allows users to
+              login to the system using their email and password.
+            </p>
+            <ul
+              class="inline-flex text-xs md:text-base gap-x-4 md:gap-x-6 mt-6 [&>li]:text-gray-400 [&>li]:text-sm [&>li]:font-mono">
+              <li class="hover:text-white hover:cursor-default">#Laravel</li>
+              <li class="hover:text-white hover:cursor-default">#Postgres</li>
+              <li class="hover:text-white hover:cursor-default">#ReactJS</li>
+              <li class="hover:text-white hover:cursor-default">#Typescript</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="text-center text-gray-500 text-sm">
+          and of course, <span class="text-emerald-400 font-semibold"> THIS WEB</span> too...
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section
+      class="min-h-screen max-h-screen overflow-hidden flex flex-col items-center justify-center space-y-4 relative"
+      id="contact">
+      <span class="font-mono text-emerald-400 font-semibold text-xl">03. Get more</span>
+      <h2 class="text-gray-300 text-5xl font-bold">Contact</h2>
+      <p class="text-gray-500 text-lg text-center max-w-lg">
+        Feel free to reach out to me via email or LinkedIn.
+      </p>
+      <div class="mt-8">
+        <ul class="flex items-center gap-x-4 md:gap-x-10">
+          <li>
+            <a href="https://github.com/dhanuprys" target="_blank">
+              <i
+                class="fa-brands fa-github text-2xl md:text-5xl text-gray-500 transition-transform duration-300 hover:text-emerald-200 hover:translate-y-1"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:dhanuprys@gmail.com" target="_blank">
+              <i
+                class="fa-solid fa-envelope text-2xl md:text-5xl text-gray-500 transition-transform duration-300 hover:text-emerald-200 hover:translate-y-1"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/dhanuprys/" target="_blank">
+              <i
+                class="fa-brands fa-instagram text-2xl md:text-5xl text-gray-500 transition-transform duration-300 hover:text-emerald-200 hover:translate-y-1"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/dhanuprys/" target="_blank">
+              <i
+                class="fa-brands fa-linkedin text-2xl md:text-5xl text-gray-500 transition-transform duration-300 hover:text-emerald-200 hover:translate-y-1"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="absolute -z-50 bottom-0 left-0 w-full border-t-2 aspect-square translate-y-3/4 bg-gradient-to-t rounded-full to-black/10 from-emerald-300/10">
+      </div>
+    </section>
+  </main>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
