@@ -7,85 +7,185 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Portofolio profesional Dhanu Purnayasa - Developer full-stack dengan pengalaman dalam React, Laravel, Python, dan teknologi modern. Mahasiswa Universitas Pendidikan Ganesha yang mengembangkan aplikasi web inovatif." />
+  <meta name="keywords"
+    content="Dhanu Purnayasa, portofolio, developer, full-stack, React, Laravel, Python, JavaScript, TypeScript, web development, software engineer, Bali, Indonesia" />
+  <meta name="author" content="Dhanu Purnayasa" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="Indonesian" />
+  <meta name="revisit-after" content="7 days" />
+  <link rel="canonical" href="https://dedan.my.id/" />
+  <meta name="theme-color" content="#10b981" />
+  <meta name="msapplication-TileColor" content="#10b981" />
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="DEDAN SYSTEM - Dhanu Purnayasa | Full-Stack Developer" />
+  <meta property="og:description"
+    content="Portofolio profesional Dhanu Purnayasa - Developer full-stack dengan pengalaman dalam React, Laravel, Python, dan teknologi modern. Mahasiswa Universitas Pendidikan Ganesha yang mengembangkan aplikasi web inovatif." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dedan.my.id/" />
+  <meta property="og:site_name" content="DEDAN SYSTEM" />
+  <meta property="og:image" content="https://dedan.my.id/images/me.webp" />
+  <meta property="og:image:alt" content="Foto profil Dhanu Purnayasa" />
+  <meta property="og:locale" content="id_ID" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DEDAN SYSTEM - Dhanu Purnayasa | Full-Stack Developer" />
+  <meta name="twitter:description"
+    content="Portofolio profesional Dhanu Purnayasa - Developer full-stack dengan pengalaman dalam React, Laravel, Python, dan teknologi modern." />
+  <meta name="twitter:image" content="https://dedan.my.id/images/me.webp" />
+  <meta name="twitter:image:alt" content="Foto profil Dhanu Purnayasa" />
   <link rel="stylesheet" href="/src/style.css" />
-  <title>DEDAN SYSTEM - Dhanu Purnayasa</title>
+  <title>DEDAN SYSTEM - Dhanu Purnayasa | Full-Stack Developer Portfolio</title>
   <!-- External CSS library for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <!-- jQuery library for JavaScript functionality -->
   <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
     integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Dhanu Purnayasa",
+    "alternateName": "DEDAN SYSTEM",
+    "description": "Full-stack developer dan mahasiswa Universitas Pendidikan Ganesha dengan pengalaman dalam React, Laravel, Python, dan teknologi modern",
+    "url": "https://dedan.my.id",
+    "image": "https://dedan.my.id/images/me.webp",
+    "sameAs": [
+      "https://github.com/dhanuprys",
+      "https://www.linkedin.com/in/dhanuprys/",
+      "https://www.instagram.com/dhanuprys/"
+    ],
+    "jobTitle": "Full-Stack Developer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Universitas Pendidikan Ganesha",
+      "url": "https://undiksha.ac.id"
+    },
+    "alumniOf": {
+      "@type": "Organization",
+      "name": "Universitas Pendidikan Ganesha"
+    },
+    "knowsAbout": [
+      "React",
+      "Laravel",
+      "Python",
+      "JavaScript",
+      "TypeScript",
+      "Web Development",
+      "Software Engineering",
+      "MySQL",
+      "PostgreSQL",
+      "Docker",
+      "Linux"
+    ],
+    "email": "dhanuprys@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "ID",
+      "addressRegion": "Bali"
+    }
+  }
+  </script>
 </head>
 
 <!-- BODY SECTION: Main content container with dark gradient background -->
 
 <body class="bg-gradient-to-b from-slate-900 via-slate-950 to-slate-800 max-w-screen !overflow-x-hidden">
 
+  <!-- Skip Link for Accessibility -->
+  <a href="#main-content"
+    class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-emerald-500 text-white px-4 py-2 rounded z-50">
+    Skip to main content
+  </a>
+
   <!-- HEADER SECTION: Fixed navigation bar with logo and menu items -->
   <header
-    class="fixed px-4 md:px-12 top-0 left-0 w-full max-w-full z-50 flex justify-between py-4 bg-slate-900/30 backdrop-blur-sm border-t-2 border-t-emerald-500/50">
+    class="fixed px-4 md:px-12 top-0 left-0 w-full max-w-full z-50 flex justify-between py-4 bg-slate-900/30 backdrop-blur-sm border-t-2 border-t-emerald-500/50"
+    role="banner">
     <!-- Logo/Brand name -->
     <div>
-      <span class="font-bold font-mono text-2xl text-white">{DEDAN <span class="text-emerald-400">SYS</span>TEM}</span>
+      <a href="#hero" class="font-bold font-mono text-2xl text-white hover:text-emerald-400 transition-colors"
+        aria-label="DEDAN SYSTEM - Kembali ke atas">
+        {DEDAN <span class="text-emerald-400">SYS</span>TEM}
+      </a>
     </div>
     <!-- Navigation menu (hidden on mobile, visible on desktop) -->
-    <ul class="gap-x-6 hidden md:inline-flex">
-      <li>
-        <a href="#profile" class="flex items-center gap-x-2 font-mono group hover:cursor-pointer">
-          <span class="text-emerald-400 font-semibold text-sm">01.</span>
-          <h2 class="text-gray-300 font-bold group-hover:text-emerald-400 transition-colors">Profile</h2>
-        </a>
-      </li>
-      <li>
-        <a href="#works" class="flex items-center gap-x-2 font-mono group hover:cursor-pointer">
-          <span class="text-emerald-400 font-semibold text-sm">02.</span>
-          <h2 class="text-gray-300 font-bold group-hover:text-emerald-400 transition-colors">Works</h2>
-        </a>
-      </li>
-      <li>
-        <a href="#contact" class="flex items-center gap-x-2 font-mono group hover:cursor-pointer">
-          <span class="text-emerald-400 font-semibold text-sm">03.</span>
-          <h2 class="text-gray-300 font-bold group-hover:text-emerald-400 transition-colors">Contact</h2>
-        </a>
-      </li>
-    </ul>
+    <nav role="navigation" aria-label="Navigasi utama">
+      <ul class="gap-x-6 hidden md:inline-flex" role="menubar">
+        <li role="none">
+          <a href="#profile" class="flex items-center gap-x-2 font-mono group hover:cursor-pointer" role="menuitem"
+            aria-label="Lihat profil">
+            <span class="text-emerald-400 font-semibold text-sm">01.</span>
+            <span class="text-gray-300 font-bold group-hover:text-emerald-400 transition-colors">Profile</span>
+          </a>
+        </li>
+        <li role="none">
+          <a href="#works" class="flex items-center gap-x-2 font-mono group hover:cursor-pointer" role="menuitem"
+            aria-label="Lihat karya">
+            <span class="text-emerald-400 font-semibold text-sm">02.</span>
+            <span class="text-gray-300 font-bold group-hover:text-emerald-400 transition-colors">Works</span>
+          </a>
+        </li>
+        <li role="none">
+          <a href="#contact" class="flex items-center gap-x-2 font-mono group hover:cursor-pointer" role="menuitem"
+            aria-label="Hubungi saya">
+            <span class="text-emerald-400 font-semibold text-sm">03.</span>
+            <span class="text-gray-300 font-bold group-hover:text-emerald-400 transition-colors">Contact</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <!-- MAIN CONTENT SECTION: Container for all page sections -->
-  <main class="max-w-[75rem] mx-auto md:px-8">
+  <main id="main-content" class="max-w-[75rem] mx-auto md:px-8" role="main">
 
     <!-- LEFT SIDEBAR: Social media links (visible on large screens only) -->
-    <div class="fixed flex-col justify-end items-center gap-y-8 top-0 left-0 h-full pl-12 hidden lg:flex">
-      <ul class="space-y-8">
+    <aside class="fixed flex-col justify-end items-center gap-y-8 top-0 left-0 h-full pl-12 hidden lg:flex"
+      aria-label="Media sosial">
+      <ul class="space-y-8" role="list">
         <li>
-          <a href=" https://github.com/dhanuprys" target="_blank">
-            <i
-              class="fa-brands fa-github text-2xl text-gray-500 transition-transform duration-300 hover:text-emerald-200 hover:translate-x-1"></i>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/dhanuprys/" target="_blank">
-            <i
-              class="fa-brands fa-linkedin text-2xl text-gray-500 transition-transform duration-300 hover:text-emerald-200 hover:translate-x-1"></i>
+          <a href="https://github.com/dhanuprys" target="_blank" aria-label="Kunjungi profil GitHub Dhanu Purnayasa">
+            <i class="fa-brands fa-github text-2xl text-gray-500 transition-transform duration-300 hover:text-emerald-200 hover:translate-x-1"
+              aria-hidden="true"></i>
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/dhanuprys/" target="_blank">
-            <i
-              class="fa-brands fa-instagram text-2xl text-gray-500 transition-transform duration-300 hover:text-emerald-200 hover:translate-x-1"></i>
+          <a href="https://www.linkedin.com/in/dhanuprys/" target="_blank"
+            aria-label="Kunjungi profil LinkedIn Dhanu Purnayasa">
+            <i class="fa-brands fa-linkedin text-2xl text-gray-500 transition-transform duration-300 hover:text-emerald-200 hover:translate-x-1"
+              aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/dhanuprys/" target="_blank"
+            aria-label="Kunjungi profil Instagram Dhanu Purnayasa">
+            <i class="fa-brands fa-instagram text-2xl text-gray-500 transition-transform duration-300 hover:text-emerald-200 hover:translate-x-1"
+              aria-hidden="true"></i>
           </a>
         </li>
       </ul>
       <!-- Decorative line element -->
-      <div class="h-1/4 w-[3px] bg-gray-500"></div>
-    </div>
+      <div class="h-1/4 w-[3px] bg-gray-500" aria-hidden="true"></div>
+    </aside>
 
     <!-- RIGHT SIDEBAR: Email contact (visible on large screens only) -->
-    <div class="hidden fixed flex-col justify-end items-center gap-y-4 top-0 right-0 h-full pr-12 lg:flex">
+    <aside class="hidden fixed flex-col justify-end items-center gap-y-4 top-0 right-0 h-full pr-12 lg:flex"
+      aria-label="Kontak email">
       <a href="mailto:dhanuprys@gmail.com" target="_blank"
-        class="text-gray-500 font-mono [writing-mode:vertical-rl] tracking-widest transition-transform duration-300 hover:-translate-y-2 hover:text-emerald-200">
+        class="text-gray-500 font-mono [writing-mode:vertical-rl] tracking-widest transition-transform duration-300 hover:-translate-y-2 hover:text-emerald-200"
+        aria-label="Kirim email ke dhanuprys@gmail.com">
         dhanuprys@gmail.com
       </a>
       <!-- Decorative line element -->
-      <div class="h-1/4 w-[3px] bg-gray-500"></div>
-    </div>
+      <div class="h-1/4 w-[3px] bg-gray-500" aria-hidden="true"></div>
+    </aside>
 
     <!-- CURSOR FOLLOWER: Interactive background element that follows mouse -->
     <div id="cursor-follower"
@@ -93,11 +193,11 @@
     </div>
 
     <!-- HERO SECTION: Introduction and main call-to-action -->
-    <section class="min-h-screen flex flex-col justify-center px-6 md:px-14">
+    <section id="hero" class="min-h-screen flex flex-col justify-center px-6 md:px-14" aria-labelledby="hero-heading">
       <!-- Greeting text -->
       <span class="font-mono text-emerald-400 text-lg md:text-xl">Hi, i'm...</span>
       <!-- Main name heading -->
-      <h1 class="text-4xl md:text-7xl font-bold text-gray-300 mt-2 md:mt-5">Dhanu Purnayasa.</h1>
+      <h1 id="hero-heading" class="text-4xl md:text-7xl font-bold text-gray-300 mt-2 md:mt-5">Dhanu Purnayasa.</h1>
       <!-- Tagline with gradient text effect -->
       <p
         class="bg-gradient-to-b from-gray-400 to-gray-300 bg-clip-text text-transparent pb-4 opacity-80 text-3xl md:text-5xl font-bold mt-2 md:mt-5">
@@ -111,23 +211,26 @@
       <!-- Call-to-action button -->
       <div class="mt-14">
         <a href="https://github.com/dhanuprys" target="_blank"
-          class="px-6 py-4 rounded text-emerald-400 border font-bold transition-colors hover:cursor-pointer border-emerald-300 hover:bg-emerald-300 hover:text-slate-900">
-          <i class="fa-brands fa-github text-xl mr-2"></i>
+          class="px-6 py-4 rounded text-emerald-400 border font-bold transition-colors hover:cursor-pointer border-emerald-300 hover:bg-emerald-300 hover:text-slate-900"
+          aria-label="Kunjungi profil GitHub Dhanu Purnayasa untuk melihat proyek dan kode">
+          <i class="fa-brands fa-github text-xl mr-2" aria-hidden="true"></i>
           Check My Github
         </a>
       </div>
       <!-- Background decorative element -->
       <div
-        class="absolute -z-10 top-0 left-1/2 -translate-x-1/2 -translate-y-3/4 w-full aspect-square bg-gradient-to-b from-emerald-300/10 rounded-full">
+        class="absolute -z-10 top-0 left-1/2 -translate-x-1/2 -translate-y-3/4 w-full aspect-square bg-gradient-to-b from-emerald-300/10 rounded-full"
+        aria-hidden="true">
       </div>
     </section>
 
     <!-- PROFILE SECTION: About me information and personal photo -->
-    <section class="min-h-screen flex flex-col justify-center px-6 md:px-14" id="profile">
+    <section class="min-h-screen flex flex-col justify-center px-6 md:px-14" id="profile"
+      aria-labelledby="profile-heading">
       <!-- Section header with number and title -->
       <div class="flex items-end gap-x-4">
         <span class="font-mono text-emerald-400 font-semibold text-lg md:text-2xl">01.</span>
-        <h2 class="text-gray-300 text-2xl md:text-3xl font-bold">About Me</h2>
+        <h2 id="profile-heading" class="text-gray-300 text-2xl md:text-3xl font-bold">About Me</h2>
         <!-- Decorative line -->
         <div class="h-px flex-auto bg-gray-500/20 mb-4 max-w-md"></div>
       </div>
@@ -209,7 +312,9 @@
         <div class="group shrink-0 mt-4 flex justify-center">
           <div class="relative">
             <!-- Main profile image -->
-            <img src="/images/me.webp"
+            <img
+              alt="Foto profil Dhanu Purnayasa, seorang full-stack developer dan mahasiswa Universitas Pendidikan Ganesha"
+              src="/images/me.webp"
               class="bg-emerald-300 object-cover h-[300px] w-[300px] rounded -translate-x-[8px] -translate-y-[8px] transition-transform duration-500 group-hover:-translate-x-[12px] group-hover:-translate-y-[12px]">
             <!-- Overlay effect on hover -->
             <div
@@ -225,11 +330,11 @@
     </section>
 
     <!-- PROJECTS SECTION: Portfolio showcase of developed applications -->
-    <section class="min-h-screen flex flex-col px-4 mt-12" id="works">
+    <section class="min-h-screen flex flex-col px-4 mt-12" id="works" aria-labelledby="works-heading">
       <!-- Section header with number and title -->
       <div class="flex items-end gap-x-4">
         <span class="font-mono text-emerald-400 font-semibold text-lg md:text-2xl">02.</span>
-        <h2 class="text-gray-300 text-2xl md:text-3xl font-bold">My Works</h2>
+        <h2 id="works-heading" class="text-gray-300 text-2xl md:text-3xl font-bold">My Works</h2>
         <!-- Decorative line -->
         <div class="h-px flex-auto bg-gray-500/20 mb-4 max-w-md"></div>
       </div>
@@ -247,6 +352,7 @@
           <div
             class="relative aspect-auto w-full md:w-3/5 group-hover:w-full transition-all duration-500 delay-[300ms]">
             <img src="/images/portofolio/webstemsi.webp"
+              alt="Screenshot halaman utama website STEMSI - website informasi SMK Negeri 3 Singaraja dengan desain modern dan responsif"
               class="object-contain bg-slate-700/20 rounded-lg md:border-2 md:border-emerald-800/30" />
             <!-- Image overlay effect -->
             <div
@@ -257,7 +363,7 @@
           <div
             class="md:absolute right-0 top-0 h-full p-6 md:p-8 md:max-w-1/2 flex flex-col justify-center border-1 shadow-2xl md:border-0 md:shadow-none md:items-end group-hover:bg-slate-950/95 rounded-r-lg transition-all delay-[300ms] duration-500">
             <span class="font-mono text-emerald-400">Featured Project</span>
-            <strong class="text-2xl md:text-3xl mt-2 text-gray-300">WEB STEMSI</strong>
+            <h3 class="text-2xl md:text-3xl mt-2 text-gray-300">WEB STEMSI</h3>
             <!-- Project description -->
             <p
               class="md:text-right bg-slate-950/80 backdrop-blur-2xl shadow-lg text-gray-200 transition-all md:p-8 group-hover:p-0 group-hover:bg-transparent group-hover:backdrop-blur-none delay-[300ms] mt-4 md:mt-8 rounded-md">
@@ -286,6 +392,7 @@
           <div
             class="relative aspect-auto w-full md:w-3/5 group-hover:w-full transition-all duration-500 delay-[300ms]">
             <img src="/images/portofolio/amerta-sso.webp"
+              alt="Screenshot dashboard SSO STEMSI - sistem single sign-on untuk SMK Negeri 3 Singaraja dengan antarmuka yang bersih dan fungsional"
               class="object-contain bg-slate-700/20 rounded-lg md:border-2 md:border-emerald-800/30" />
             <!-- Image overlay effect -->
             <div
@@ -296,7 +403,7 @@
           <div
             class="md:absolute left-0 top-0 h-full p-6 md:p-8 md:max-w-1/2 flex flex-col justify-center border-1 shadow-2xl md:border-0 md:shadow-none items-start group-hover:bg-slate-950/95 rounded-l-lg transition-all delay-[300ms] duration-500">
             <span class="font-mono text-emerald-400">Featured Project</span>
-            <strong class="text-3xl mt-2 text-gray-300">SSO STEMSI</strong>
+            <h3 class="text-3xl mt-2 text-gray-300">SSO STEMSI</h3>
             <span class="font-mono text-white font-semibold text-sm">(+7 apps included)</span>
             <!-- Project description -->
             <p
@@ -326,6 +433,7 @@
           <div
             class="relative aspect-auto w-full md:w-3/5 group-hover:w-full transition-all duration-500 delay-[300ms]">
             <img src="/images/portofolio/aps.webp"
+              alt="Screenshot website The Pas Group (APS) - company profile dengan desain profesional dan informasi lengkap tentang perusahaan"
               class="object-contain bg-slate-700/20 rounded-lg md:border-2 md:border-emerald-800/30" />
             <!-- Image overlay effect -->
             <div
@@ -336,7 +444,7 @@
           <div
             class="md:absolute right-0 top-0 h-full p-6 md:p-8 md:max-w-1/2 flex flex-col justify-center border-1 shadow-2xl md:border-0 md:shadow-none md:items-end group-hover:bg-slate-950/95 rounded-r-lg transition-all delay-[300ms] duration-500">
             <span class="font-mono text-emerald-400">Featured Project</span>
-            <strong class="text-3xl mt-2 text-gray-300">The Pas Group (APS)</strong>
+            <h3 class="text-3xl mt-2 text-gray-300">The Pas Group (APS)</h3>
             <!-- Project description -->
             <p
               class="md:text-right bg-slate-950/80 backdrop-blur-2xl shadow-lg text-gray-200 transition-all md:p-8 group-hover:p-0 group-hover:bg-transparent group-hover:backdrop-blur-none delay-[300ms] mt-4 md:mt-8 rounded-md">
@@ -361,6 +469,7 @@
           <div
             class="relative aspect-auto w-full md:w-3/5 group-hover:w-full transition-all duration-500 delay-[300ms]">
             <img src="/images/portofolio/nitheater.webp"
+              alt="Screenshot halaman NITHEATER - bagian dari festival film Nitisara dengan desain yang menarik dan informatif"
               class="object-contain bg-slate-700/20 rounded-lg md:border-2 md:border-emerald-800/30" />
             <!-- Image overlay effect -->
             <div
@@ -371,7 +480,7 @@
           <div
             class="md:absolute left-0 top-0 h-full p-6 md:p-8 md:max-w-1/2 flex flex-col justify-center border-1 shadow-2xl md:border-0 md:shadow-none items-start group-hover:bg-slate-950/95 rounded-l-lg transition-all delay-[300ms] duration-500">
             <span class="font-mono text-emerald-400">Featured Project</span>
-            <strong class="text-3xl mt-2 text-gray-300">NITHEATER</strong>
+            <h3 class="text-3xl mt-2 text-gray-300">NITHEATER</h3>
             <!-- Project description -->
             <p
               class="bg-slate-950/80 backdrop-blur-2xl shadow-lg text-gray-200 transition-all md:p-8 group-hover:p-0 group-hover:bg-transparent group-hover:backdrop-blur-none delay-[300ms] mt-4 md:mt-8 rounded-md">
@@ -399,6 +508,7 @@
           <div
             class="relative aspect-auto w-full md:w-3/5 group-hover:w-full transition-all duration-500 delay-[300ms]">
             <img src="/images/portofolio/gita-ai.webp"
+              alt="Screenshot aplikasi Gita AI - webapp yang menyajikan informasi Bhagavad Gita dengan bantuan AI dan antarmuka yang user-friendly"
               class="object-contain bg-slate-700/20 rounded-lg md:border-2 md:border-emerald-800/30" />
             <!-- Image overlay effect -->
             <div
@@ -409,7 +519,7 @@
           <div
             class="md:absolute right-0 top-0 h-full p-6 md:p-8 md:max-w-1/2 flex flex-col justify-center border-1 shadow-2xl md:border-0 md:shadow-none md:items-end group-hover:bg-slate-950/95 rounded-r-lg transition-all delay-[300ms] duration-500">
             <span class="font-mono text-emerald-400">Featured Project</span>
-            <strong class="text-3xl mt-2 text-gray-300">Gita AI</strong>
+            <h3 class="text-3xl mt-2 text-gray-300">Gita AI</h3>
             <!-- Project description -->
             <p
               class="md:text-right bg-slate-950/80 backdrop-blur-2xl shadow-lg text-gray-200 transition-all md:p-8 group-hover:p-0 group-hover:bg-transparent group-hover:backdrop-blur-none delay-[300ms] mt-4 md:mt-8 rounded-md">
@@ -436,6 +546,7 @@
           <div
             class="relative aspect-auto w-full md:w-3/5 group-hover:w-full transition-all duration-500 delay-[300ms]">
             <img src="/images/portofolio/skp-awards.webp"
+              alt="Screenshot fitur SKP Awards - sistem ranking aktivitas mahasiswa dalam aplikasi BEM FTK SKP dengan dashboard yang informatif"
               class="object-contain bg-slate-700/20 rounded-lg md:border-2 md:border-emerald-800/30" />
             <!-- Image overlay effect -->
             <div
@@ -446,7 +557,7 @@
           <div
             class="md:absolute left-0 top-0 h-full p-6 md:p-8 md:max-w-1/2 flex flex-col justify-center border-1 md:border-0 md:shadow-none items-start group-hover:bg-slate-950/95 rounded-l-lg transition-all delay-[300ms] duration-500">
             <span class="font-mono text-emerald-400">Featured Project</span>
-            <strong class="text-3xl mt-2 text-gray-300">SKP Awards</strong>
+            <h3 class="text-3xl mt-2 text-gray-300">SKP Awards</h3>
             <!-- Project description -->
             <p
               class="bg-slate-950/80 backdrop-blur-2xl shadow-lg text-gray-200 transition-all md:p-8 group-hover:p-0 group-hover:bg-transparent group-hover:backdrop-blur-none delay-[300ms] mt-4 md:mt-8 rounded-md">
@@ -479,46 +590,49 @@
     <!-- CONTACT SECTION: Contact information and social media links -->
     <section
       class="min-h-screen max-h-screen overflow-hidden flex flex-col items-center justify-center space-y-4 relative"
-      id="contact">
+      id="contact" aria-labelledby="contact-heading">
       <!-- Section header -->
       <span class="font-mono text-emerald-400 font-semibold text-xl">03. Get more</span>
-      <h2 class="text-gray-300 text-5xl font-bold">Contact</h2>
+      <h2 id="contact-heading" class="text-gray-300 text-5xl font-bold">Contact</h2>
       <!-- Contact description -->
       <p class="text-gray-500 text-lg text-center max-w-lg">
         Feel free to reach out to me via email or LinkedIn.
       </p>
       <!-- Social media links container -->
       <div class="mt-8">
-        <ul class="flex items-center gap-x-4 md:gap-x-10">
+        <ul class="flex items-center gap-x-4 md:gap-x-10" role="list" aria-label="Media sosial dan kontak">
           <li>
-            <a href="https://github.com/dhanuprys" target="_blank">
-              <i
-                class="fa-brands fa-github text-2xl md:text-5xl text-gray-500 transition-transform duration-300 hover:text-emerald-200 hover:translate-y-1"></i>
+            <a href="https://github.com/dhanuprys" target="_blank" aria-label="Kunjungi profil GitHub Dhanu Purnayasa">
+              <i class="fa-brands fa-github text-2xl md:text-5xl text-gray-500 transition-transform duration-300 hover:text-emerald-200 hover:translate-y-1"
+                aria-hidden="true"></i>
             </a>
           </li>
           <li>
-            <a href="mailto:dhanuprys@gmail.com" target="_blank">
-              <i
-                class="fa-solid fa-envelope text-2xl md:text-5xl text-gray-500 transition-transform duration-300 hover:text-emerald-200 hover:translate-y-1"></i>
+            <a href="mailto:dhanuprys@gmail.com" target="_blank" aria-label="Kirim email ke dhanuprys@gmail.com">
+              <i class="fa-solid fa-envelope text-2xl md:text-5xl text-gray-500 transition-transform duration-300 hover:text-emerald-200 hover:translate-y-1"
+                aria-hidden="true"></i>
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/dhanuprys/" target="_blank">
-              <i
-                class="fa-brands fa-instagram text-2xl md:text-5xl text-gray-500 transition-transform duration-300 hover:text-emerald-200 hover:translate-y-1"></i>
+            <a href="https://www.instagram.com/dhanuprys/" target="_blank"
+              aria-label="Kunjungi profil Instagram Dhanu Purnayasa">
+              <i class="fa-brands fa-instagram text-2xl md:text-5xl text-gray-500 transition-transform duration-300 hover:text-emerald-200 hover:translate-y-1"
+                aria-hidden="true"></i>
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/dhanuprys/" target="_blank">
-              <i
-                class="fa-brands fa-linkedin text-2xl md:text-5xl text-gray-500 transition-transform duration-300 hover:text-emerald-200 hover:translate-y-1"></i>
+            <a href="https://www.linkedin.com/in/dhanuprys/" target="_blank"
+              aria-label="Kunjungi profil LinkedIn Dhanu Purnayasa">
+              <i class="fa-brands fa-linkedin text-2xl md:text-5xl text-gray-500 transition-transform duration-300 hover:text-emerald-200 hover:translate-y-1"
+                aria-hidden="true"></i>
             </a>
           </li>
         </ul>
       </div>
       <!-- Background decorative element -->
       <div
-        class="absolute -z-50 bottom-0 left-0 w-full border-t-2 aspect-square translate-y-3/4 bg-gradient-to-t rounded-full to-black/10 from-emerald-300/10">
+        class="absolute -z-50 bottom-0 left-0 w-full border-t-2 aspect-square translate-y-3/4 bg-gradient-to-t rounded-full to-black/10 from-emerald-300/10"
+        aria-hidden="true">
       </div>
     </section>
   </main>
