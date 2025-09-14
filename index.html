@@ -106,7 +106,7 @@
 
 <!-- BODY SECTION: Main content container with dark gradient background -->
 
-<body class="bg-gradient-to-b from-slate-900 via-slate-950 to-slate-800 max-w-screen !overflow-x-hidden">
+<body class="bg-slate-900 max-w-screen !overflow-x-hidden">
 
   <!-- Skip Link for Accessibility -->
   <a href="#main-content"
@@ -116,7 +116,7 @@
 
   <!-- HEADER SECTION: Fixed navigation bar with logo and menu items -->
   <header
-    class="fixed px-4 md:px-12 top-0 left-0 w-full max-w-full z-50 flex justify-between py-4 bg-slate-900/30 backdrop-blur-sm border-t-2 border-t-emerald-500/50"
+    class="fixed px-4 md:px-12 top-0 left-0 w-full max-w-full z-[200] flex justify-between py-4 bg-slate-900/30 backdrop-blur-sm border-t-2 border-t-emerald-500/50"
     role="banner">
     <!-- Logo/Brand name -->
     <div>
@@ -143,9 +143,16 @@
           </a>
         </li>
         <li role="none">
+          <a href="#certificates" class="flex items-center gap-x-2 font-mono group hover:cursor-pointer" role="menuitem"
+            aria-label="Lihat sertifikat">
+            <span class="text-emerald-400 font-semibold text-sm">03.</span>
+            <span class="text-gray-300 font-bold group-hover:text-emerald-400 transition-colors">Certificates</span>
+          </a>
+        </li>
+        <li role="none">
           <a href="#contact" class="flex items-center gap-x-2 font-mono group hover:cursor-pointer" role="menuitem"
             aria-label="Hubungi saya">
-            <span class="text-emerald-400 font-semibold text-sm">03.</span>
+            <span class="text-emerald-400 font-semibold text-sm">04.</span>
             <span class="text-gray-300 font-bold group-hover:text-emerald-400 transition-colors">Contact</span>
           </a>
         </li>
@@ -340,7 +347,7 @@
     </section>
 
     <!-- PROJECTS SECTION: Portfolio showcase of developed applications -->
-    <section class="min-h-screen flex flex-col px-4 mt-12" id="works" aria-labelledby="works-heading">
+    <section class="min-h-screen flex flex-col px-4 pt-12" id="works" aria-labelledby="works-heading">
       <!-- Section header with number and title -->
       <div class="flex items-end gap-x-4">
         <span class="font-mono text-emerald-400 font-semibold text-lg md:text-2xl">02.</span>
@@ -619,12 +626,265 @@
       </div>
     </section>
 
+    <!-- CERTIFICATES SECTION -->
+    <section class="flex flex-col px-4 pt-24" id="certificates" aria-labelledby="certificates-heading">
+      <!-- Section header with number and title -->
+      <div class="flex items-end gap-x-4 md:px-4">
+        <span class="font-mono text-emerald-400 font-semibold text-lg md:text-2xl">03.</span>
+        <h2 id="certificates-heading" class="text-gray-300 text-2xl md:text-3xl font-bold">Certificates</h2>
+        <!-- Decorative line -->
+        <div class="h-px flex-auto bg-gray-500/20 mb-4"></div>
+      </div>
+      <!-- Section introduction -->
+      <p class="text-gray-500 text-lg mt-5 md:max-w-3xl md:px-4">
+        I have a passion for learning new technologies and programming languages. Here are some of the certificates I
+        have earned.
+      </p>
+      <!-- Projects container with spacing -->
+      <div>
+        <div class="relative grid grid-cols-2 lg:grid-cols-3 mt-8 transition-all h-[50vh] overflow-hidden"
+          id="cert-container">
+          <div id="cert-filter"
+            class="absolute pointer-events-none bottom-0 left-0 w-full h-full bg-gradient-to-t from-slate-900 via-slate-900/40 to-slate-900/10 z-[100]">
+          </div>
+
+          <a href="https://mikrotik.com/training/certificates/c275687c418d63f9ec54" target="_blank"
+            class="group relative hover:z-50 hover:cursor-pointer transition-all duration-300 delay-[300ms]">
+            <div
+              class="aspect-[16/10] backdrop-blur-2xl p-1 md:p-4 group-hover:p-2 group-hover:shadow-lg group-hover:shadow-emerald-800/30 text-gray-200 group-hover:bg-slate-950/70 transition-all duration-300 group-hover:delay-[100ms] rounded-lg group-hover:rounded-b-none">
+              <img src="/images/certificates/mtcna.png"
+                alt="Screenshot sertifikat Dicoding - Sertifikat yang diberikan oleh Dicoding sebagai penghargaan atas kontribusi dalam pengembangan aplikasi web"
+                class="object-contain size-full opacity-90 group-hover:opacity-100 rounded-lg" loading="lazy" />
+            </div>
+            <div
+              class="absolute bottom-0 left-0 w-full flex justify-center duration-300 translate-y-full z-10 bg-slate-950 border-t border-t-gray-700/20 opacity-0 group-hover:delay-[200ms] group-hover:opacity-100 rounded-b-lg px-4 pb-4 py-2">
+              <span class="text-sm text-gray-300 hover:text-gray-100">
+                Open certificate
+                <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i>
+              </span>
+            </div>
+          </a>
+
+          <a href="https://mikrotik.com/training/certificates/c275744cfc5ca176a92f" target="_blank"
+            class="group relative hover:z-50 hover:cursor-pointer transition-all duration-300 delay-[300ms]">
+            <div
+              class="aspect-[16/10] backdrop-blur-2xl p-1 md:p-4 group-hover:p-2 group-hover:shadow-lg group-hover:shadow-emerald-800/30 text-gray-200 group-hover:bg-slate-950/70 transition-all duration-300 group-hover:delay-[100ms] rounded-lg group-hover:rounded-b-none">
+              <img src="/images/certificates/mtcre.png"
+                alt="Screenshot sertifikat Dicoding - Sertifikat yang diberikan oleh Dicoding sebagai penghargaan atas kontribusi dalam pengembangan aplikasi web"
+                class="object-contain size-full opacity-90 group-hover:opacity-100 rounded-lg" loading="lazy" />
+            </div>
+            <div
+              class="absolute bottom-0 left-0 w-full flex justify-center duration-300 translate-y-full z-10 bg-slate-950 border-t border-t-gray-700/20 opacity-0 group-hover:delay-[200ms] group-hover:opacity-100 rounded-b-lg px-4 pb-4 py-2">
+              <span class="text-sm text-gray-300 hover:text-gray-100">
+                Open certificate
+                <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i>
+              </span>
+            </div>
+          </a>
+          <a href="https://www.netacad.com/certificates?issuanceId=0e373fad-55fe-445a-bdf5-70eb15421fc2" target="_blank"
+            class="group relative hover:z-50 hover:cursor-pointer transition-all duration-300 delay-[300ms]">
+            <div
+              class="aspect-[16/10] backdrop-blur-2xl p-1 md:p-4 group-hover:p-2 group-hover:shadow-lg group-hover:shadow-emerald-800/30 text-gray-200 group-hover:bg-slate-950/70 transition-all duration-300 group-hover:delay-[100ms] rounded-lg group-hover:rounded-b-none">
+              <img src="/images/certificates/ccna.png"
+                alt="Screenshot sertifikat Dicoding - Sertifikat yang diberikan oleh Dicoding sebagai penghargaan atas kontribusi dalam pengembangan aplikasi web"
+                class="object-contain size-full opacity-90 group-hover:opacity-100 rounded-lg" loading="lazy" />
+            </div>
+            <div
+              class="absolute bottom-0 left-0 w-full flex justify-center duration-300 translate-y-full z-10 bg-slate-950 border-t border-t-gray-700/20 opacity-0 group-hover:delay-[200ms] group-hover:opacity-100 rounded-b-lg px-4 pb-4 py-2">
+              <span class="text-sm text-gray-300 hover:text-gray-100">
+                Open certificate
+                <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i>
+              </span>
+            </div>
+          </a>
+
+          <a href="https://www.dicoding.com/certificates/KEXLL4W7RXG2" target="_blank"
+            class="group relative hover:z-50 hover:cursor-pointer transition-all duration-300 delay-[300ms]">
+            <div
+              class="aspect-[16/10] backdrop-blur-2xl p-1 md:p-4 group-hover:p-2 group-hover:shadow-lg group-hover:shadow-emerald-800/30 text-gray-200 group-hover:bg-slate-950/70 transition-all duration-300 group-hover:delay-[100ms] rounded-lg group-hover:rounded-b-none">
+              <img src="/images/certificates/cert-001.png"
+                alt="Screenshot sertifikat Dicoding - Sertifikat yang diberikan oleh Dicoding sebagai penghargaan atas kontribusi dalam pengembangan aplikasi web"
+                class="object-contain size-full opacity-90 group-hover:opacity-100 rounded-lg" loading="lazy" />
+            </div>
+            <div
+              class="absolute bottom-0 left-0 w-full flex justify-center duration-300 translate-y-full z-10 bg-slate-950 border-t border-t-gray-700/20 opacity-0 group-hover:delay-[200ms] group-hover:opacity-100 rounded-b-lg px-4 pb-4 py-2">
+              <span class="text-sm text-gray-300 hover:text-gray-100">
+                Open certificate
+                <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i>
+              </span>
+            </div>
+          </a>
+
+          <a href="https://www.dicoding.com/certificates/N9ZOM89V8PG5" target="_blank"
+            class="group relative hover:z-50 hover:cursor-pointer transition-all duration-300 delay-[300ms]">
+            <div
+              class="aspect-[16/10] backdrop-blur-2xl p-1 md:p-4 group-hover:p-2 group-hover:shadow-lg group-hover:shadow-emerald-800/30 text-gray-200 group-hover:bg-slate-950/70 transition-all duration-300 group-hover:delay-[100ms] rounded-lg group-hover:rounded-b-none">
+              <img src="/images/certificates/cert-002.png"
+                alt="Screenshot sertifikat Dicoding - Sertifikat yang diberikan oleh Dicoding sebagai penghargaan atas kontribusi dalam pengembangan aplikasi web"
+                class="object-contain size-full opacity-90 group-hover:opacity-100 rounded-lg" loading="lazy" />
+            </div>
+            <div
+              class="absolute bottom-0 left-0 w-full flex justify-center duration-300 translate-y-full z-10 bg-slate-950 border-t border-t-gray-700/20 opacity-0 group-hover:delay-[200ms] group-hover:opacity-100 rounded-b-lg px-4 pb-4 py-2">
+              <span class="text-sm text-gray-300 hover:text-gray-100">
+                Open certificate
+                <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i>
+              </span>
+            </div>
+          </a>
+
+          <a href="https://www.dicoding.com/certificates/72ZD8JOKQZYW" target="_blank"
+            class="group relative hover:z-50 hover:cursor-pointer transition-all duration-300 delay-[300ms]">
+            <div
+              class="aspect-[16/10] backdrop-blur-2xl p-1 md:p-4 group-hover:p-2 group-hover:shadow-lg group-hover:shadow-emerald-800/30 text-gray-200 group-hover:bg-slate-950/70 transition-all duration-300 group-hover:delay-[100ms] rounded-lg group-hover:rounded-b-none">
+              <img src="/images/certificates/cert-003.png"
+                alt="Screenshot sertifikat Dicoding - Sertifikat yang diberikan oleh Dicoding sebagai penghargaan atas kontribusi dalam pengembangan aplikasi web"
+                class="object-contain size-full opacity-90 group-hover:opacity-100 rounded-lg" loading="lazy" />
+            </div>
+            <div
+              class="absolute bottom-0 left-0 w-full flex justify-center duration-300 translate-y-full z-10 bg-slate-950 border-t border-t-gray-700/20 opacity-0 group-hover:delay-[200ms] group-hover:opacity-100 rounded-b-lg px-4 pb-4 py-2">
+              <span class="text-sm text-gray-300 hover:text-gray-100">
+                Open certificate
+                <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i>
+              </span>
+            </div>
+          </a>
+
+          <a href="https://www.dicoding.com/certificates/JMZV9EYLRPN9" target="_blank"
+            class="group relative hover:z-50 hover:cursor-pointer transition-all duration-300 delay-[300ms]">
+            <div
+              class="aspect-[16/10] backdrop-blur-2xl p-1 md:p-4 group-hover:p-2 group-hover:shadow-lg group-hover:shadow-emerald-800/30 text-gray-200 group-hover:bg-slate-950/70 transition-all duration-300 group-hover:delay-[100ms] rounded-lg group-hover:rounded-b-none">
+              <img src="/images/certificates/cert-004.png"
+                alt="Screenshot sertifikat Dicoding - Sertifikat yang diberikan oleh Dicoding sebagai penghargaan atas kontribusi dalam pengembangan aplikasi web"
+                class="object-contain size-full opacity-90 group-hover:opacity-100 rounded-lg" loading="lazy" />
+            </div>
+            <div
+              class="absolute bottom-0 left-0 w-full flex justify-center duration-300 translate-y-full z-10 bg-slate-950 border-t border-t-gray-700/20 opacity-0 group-hover:delay-[200ms] group-hover:opacity-100 rounded-b-lg px-4 pb-4 py-2">
+              <span class="text-sm text-gray-300 hover:text-gray-100">
+                Open certificate
+                <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i>
+              </span>
+            </div>
+          </a>
+
+
+          <a href="https://www.dicoding.com/certificates/JMZV9D1NQPN9" target="_blank"
+            class="group relative hover:z-50 hover:cursor-pointer transition-all duration-300 delay-[300ms]">
+            <div
+              class="aspect-[16/10] backdrop-blur-2xl p-1 md:p-4 group-hover:p-2 group-hover:shadow-lg group-hover:shadow-emerald-800/30 text-gray-200 group-hover:bg-slate-950/70 transition-all duration-300 group-hover:delay-[100ms] rounded-lg group-hover:rounded-b-none">
+              <img src="/images/certificates/cert-005.png"
+                alt="Screenshot sertifikat Dicoding - Sertifikat yang diberikan oleh Dicoding sebagai penghargaan atas kontribusi dalam pengembangan aplikasi web"
+                class="object-contain size-full opacity-90 group-hover:opacity-100 rounded-lg" loading="lazy" />
+            </div>
+            <div
+              class="absolute bottom-0 left-0 w-full flex justify-center duration-300 translate-y-full z-10 bg-slate-950 border-t border-t-gray-700/20 opacity-0 group-hover:delay-[200ms] group-hover:opacity-100 rounded-b-lg px-4 pb-4 py-2">
+              <span class="text-sm text-gray-300 hover:text-gray-100">
+                Open certificate
+                <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i>
+              </span>
+            </div>
+          </a>
+
+          <a href="https://www.dicoding.com/certificates/JMZV9176NPN9" target="_blank"
+            class="group relative hover:z-50 hover:cursor-pointer transition-all duration-300 delay-[300ms]">
+            <div
+              class="aspect-[16/10] backdrop-blur-2xl p-1 md:p-4 group-hover:p-2 group-hover:shadow-lg group-hover:shadow-emerald-800/30 text-gray-200 group-hover:bg-slate-950/70 transition-all duration-300 group-hover:delay-[100ms] rounded-lg group-hover:rounded-b-none">
+              <img src="/images/certificates/cert-006.png"
+                alt="Screenshot sertifikat Dicoding - Sertifikat yang diberikan oleh Dicoding sebagai penghargaan atas kontribusi dalam pengembangan aplikasi web"
+                class="object-contain size-full opacity-90 group-hover:opacity-100 rounded-lg" loading="lazy" />
+            </div>
+            <div
+              class="absolute bottom-0 left-0 w-full flex justify-center duration-300 translate-y-full z-10 bg-slate-950 border-t border-t-gray-700/20 opacity-0 group-hover:delay-[200ms] group-hover:opacity-100 rounded-b-lg px-4 pb-4 py-2">
+              <span class="text-sm text-gray-300 hover:text-gray-100">
+                Open certificate
+                <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i>
+              </span>
+            </div>
+          </a>
+
+          <a href="https://www.dicoding.com/certificates/81P2376LOXOY" target="_blank"
+            class="group relative hover:z-50 hover:cursor-pointer transition-all duration-300 delay-[300ms]">
+            <div
+              class="aspect-[16/10] backdrop-blur-2xl p-1 md:p-4 group-hover:p-2 group-hover:shadow-lg group-hover:shadow-emerald-800/30 text-gray-200 group-hover:bg-slate-950/70 transition-all duration-300 group-hover:delay-[100ms] rounded-lg group-hover:rounded-b-none">
+              <img src="/images/certificates/cert-007.png"
+                alt="Screenshot sertifikat Dicoding - Sertifikat yang diberikan oleh Dicoding sebagai penghargaan atas kontribusi dalam pengembangan aplikasi web"
+                class="object-contain size-full opacity-90 group-hover:opacity-100 rounded-lg" loading="lazy" />
+            </div>
+            <div
+              class="absolute bottom-0 left-0 w-full flex justify-center duration-300 translate-y-full z-10 bg-slate-950 border-t border-t-gray-700/20 opacity-0 group-hover:delay-[200ms] group-hover:opacity-100 rounded-b-lg px-4 pb-4 py-2">
+              <span class="text-sm text-gray-300 hover:text-gray-100">
+                Open certificate
+                <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i>
+              </span>
+            </div>
+          </a>
+
+          <a href="https://www.dicoding.com/certificates/07Z6V8GYJXQR" target="_blank"
+            class="group relative hover:z-50 hover:cursor-pointer transition-all duration-300 delay-[300ms]">
+            <div
+              class="aspect-[16/10] backdrop-blur-2xl p-1 md:p-4 group-hover:p-2 group-hover:shadow-lg group-hover:shadow-emerald-800/30 text-gray-200 group-hover:bg-slate-950/70 transition-all duration-300 group-hover:delay-[100ms] rounded-lg group-hover:rounded-b-none">
+              <img src="/images/certificates/cert-008.png"
+                alt="Screenshot sertifikat Dicoding - Sertifikat yang diberikan oleh Dicoding sebagai penghargaan atas kontribusi dalam pengembangan aplikasi web"
+                class="object-contain size-full opacity-90 group-hover:opacity-100 rounded-lg" loading="lazy" />
+            </div>
+            <div
+              class="absolute bottom-0 left-0 w-full flex justify-center duration-300 translate-y-full z-10 bg-slate-950 border-t border-t-gray-700/20 opacity-0 group-hover:delay-[200ms] group-hover:opacity-100 rounded-b-lg px-4 pb-4 py-2">
+              <span class="text-sm text-gray-300 hover:text-gray-100">
+                Open certificate
+                <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i>
+              </span>
+            </div>
+          </a>
+
+          <a href="https://www.dicoding.com/certificates/ERZRGG282PYV" target="_blank"
+            class="group relative hover:z-50 hover:cursor-pointer transition-all duration-300 delay-[300ms]">
+            <div
+              class="aspect-[16/10] backdrop-blur-2xl p-1 md:p-4 group-hover:p-2 group-hover:shadow-lg group-hover:shadow-emerald-800/30 text-gray-200 group-hover:bg-slate-950/70 transition-all duration-300 group-hover:delay-[100ms] rounded-lg group-hover:rounded-b-none">
+              <img src="/images/certificates/cert-009.png"
+                alt="Screenshot sertifikat Dicoding - Sertifikat yang diberikan oleh Dicoding sebagai penghargaan atas kontribusi dalam pengembangan aplikasi web"
+                class="object-contain size-full opacity-90 group-hover:opacity-100 rounded-lg" loading="lazy" />
+            </div>
+            <div
+              class="absolute bottom-0 left-0 w-full flex justify-center duration-300 translate-y-full z-10 bg-slate-950 border-t border-t-gray-700/20 opacity-0 group-hover:delay-[200ms] group-hover:opacity-100 rounded-b-lg px-4 pb-4 py-2">
+              <span class="text-sm text-gray-300 hover:text-gray-100">
+                Open certificate
+                <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i>
+              </span>
+            </div>
+          </a>
+
+          <a href="https://www.dicoding.com/certificates/N9ZO64Q40XG5" target="_blank"
+            class="group relative hover:z-50 hover:cursor-pointer transition-all duration-300 delay-[300ms]">
+            <div
+              class="aspect-[16/10] backdrop-blur-2xl p-1 md:p-4 group-hover:p-2 group-hover:shadow-lg group-hover:shadow-emerald-800/30 text-gray-200 group-hover:bg-slate-950/70 transition-all duration-300 group-hover:delay-[100ms] rounded-lg group-hover:rounded-b-none">
+              <img src="/images/certificates/cert-010.png"
+                alt="Screenshot sertifikat Dicoding - Sertifikat yang diberikan oleh Dicoding sebagai penghargaan atas kontribusi dalam pengembangan aplikasi web"
+                class="object-contain size-full opacity-90 group-hover:opacity-100 rounded-lg" loading="lazy" />
+            </div>
+            <div
+              class="absolute bottom-0 left-0 w-full flex justify-center duration-300 translate-y-full z-10 bg-slate-950 border-t border-t-gray-700/20 opacity-0 group-hover:delay-[200ms] group-hover:opacity-100 rounded-b-lg px-4 pb-4 py-2">
+              <span class="text-sm text-gray-300 hover:text-gray-100">
+                Open certificate
+                <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i>
+              </span>
+            </div>
+          </a>
+
+        </div>
+        <div class="flex justify-center mt-4">
+          <button id="cert-load-btn"
+            class="border-2 rounded px-4 py-2 border-gray-700 text-gray-300 hover:text-gray-100 hover:border-gray-500 transition-all duration-300">
+            Load more
+          </button>
+        </div>
+      </div>
+    </section>
+
     <!-- CONTACT SECTION: Contact information and social media links -->
     <section
       class="min-h-screen max-h-screen overflow-hidden flex flex-col items-center justify-center space-y-4 relative"
       id="contact" aria-labelledby="contact-heading">
       <!-- Section header -->
-      <span class="font-mono text-emerald-400 font-semibold text-xl">03. Get more</span>
+      <span class="font-mono text-emerald-400 font-semibold text-xl">04. Get more</span>
       <h2 id="contact-heading" class="text-gray-300 text-5xl font-bold">Contact</h2>
       <!-- Contact description -->
       <p class="text-gray-500 text-lg text-center max-w-lg">

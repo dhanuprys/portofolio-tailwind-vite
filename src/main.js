@@ -8,4 +8,10 @@ $(document).on('mousemove', (e) => {
       top: e.clientY
     });
   }
+
+  $('#cert-load-btn').on('click', () => {
+    $('#cert-container').removeClass('h-[50vh]');
+    $('#cert-filter').remove();
+    $('#cert-load-btn').remove();
+  });
 });
