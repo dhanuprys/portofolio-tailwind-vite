@@ -221,8 +221,8 @@
       </p>
       <!-- Personal description -->
       <p class="text-gray-500 md:text-xl mt-2 md:mt-5">
-        I have loved writing code and building software since I was a <span
-          class="text-emerald-400 font-semibold">kids!</span>.
+        I have loved writing code and building software since <span
+          class="text-emerald-400 font-semibold hover:cursor-[url(/images/baby.png),_pointer]">I was a kids!</span>.
       </p>
       <!-- Call-to-action button (Desktop) -->
       <div class="hidden sm:flex pt-14 items-center gap-x-2">
@@ -234,14 +234,33 @@
             Check My Github
           </a>
         </div>
-        <div>
+        <div class="group relative">
           <a href="https://cloud.dedan.my.id" target="_blank"
-            class="group px-6 rounded text-emerald-400 sm:text-lg font-bold transition-colors hover:cursor-pointer"
+            class="px-6 py-4 rounded text-emerald-400 group-hover:text-shadow-2xl text-shadow-emerald-500 relative group-hover:z-[9999] sm:text-lg font-bold transition-colors hover:cursor-pointer"
             aria-label="Buka halaman private cloud">
             <span class="group-hover:underline underline-offset-4">Open DedanCloud</span>
-            <i class="fa-solid fa-arrow-right text-xl ml-2 group-hover:ml-4 transition-all duration-300"
+            <i class="fa-solid fa-arrow-right text-xl ml-2 mr-2 group-hover:mr-0 group-hover:ml-4 transition-all duration-300"
               aria-hidden="true"></i>
           </a>
+          <div
+            class="absolute top-0 right-0 -translate-y-1/2 opacity-0 pointer-events-none group-hover:delay-300 group-hover:opacity-100 group-hover:duration-600 group-hover:shadow-emerald-900 group-hover:shadow transition-opacity duration-100 translate-x-full delay-0 group-hover:z-[998]">
+            <div class="rounded w-xs">
+              <img src="/images/nextcloud.webp" class="w-full aspect-[3/1] object-cover rounded-t"
+                alt="Screenshot halaman private cloud">
+              <div class="p-4 bg-black rounded-b">
+                <h3 class="text-gray-300 text-lg font-bold">DedanCloud</h3>
+                <p class="text-gray-500 text-sm">
+                  Powered by NextCloud
+                </p>
+                <p class="text-gray-400 mt-3 text-sm">https://cloud.dedan.my.id</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="group-hover:opacity-100 opacity-0 transition-opacity z-[997] flex items-center justify-center fixed top-0 left-0 w-full h-full group-hover:duration-800 bg-black pointer-events-none">
+            <img src="/images/dedancloud.png"
+              class="w-full h-full scale-120 ease-out group-hover:scale-100 transition-all delay-0 group-hover:delay-300 duration-500 object-cover object-top opacity-20" />
+          </div>
         </div>
       </div>
       <!-- CTA (Mobile) -->
